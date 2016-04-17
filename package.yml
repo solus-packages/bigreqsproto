@@ -1,0 +1,18 @@
+name        : bigreqsproto
+version     : 1.1.2
+release     : 4
+source      :
+    - http://xorg.freedesktop.org/releases/individual/proto/bigreqsproto-1.1.2.tar.gz : de68a1a9dd1a1219ad73531bff9f662bc62fcd777387549c43cd282399f4a6ea
+license     :
+    - MIT
+summary     : Big Requests Extension
+component   : xorg.proto
+description : |
+    This extension defines a protocol to enable the use of requests that exceed 262140 bytes in length.
+patterns   : /
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
